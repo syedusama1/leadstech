@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    height: 100vh;
+    background: black;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 3em;
+    font-family: sans-serif;
+    letter-spacing: 0.2em;
+}
+
+h1 span {
+    opacity: 10;
+    display: inline-block;
+    
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotateY(90deg);
+        filter: blur(10px);
+    }
+}
+
+100% {
+    opacity: 0%;
+    transform: rotateY(0deg);
+    filter: blur(0);
+}
+
+@media only screen and (min-width: 601px) {
+  .services
+	{
+		width:97%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+  .services
+	{
+		width:90%;
+	}
+}
+	
+.img-fluid {
+    width: -webkit-fill-available;
+    height: auto;
+}
+
